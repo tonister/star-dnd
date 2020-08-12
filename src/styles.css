@@ -18,7 +18,7 @@ h2 {
   float: left;
 }
 .drag-enter {
-  border: 2px dashed #000;
+  border: 2px dashed #000 !important;
 }
 .box {
   width: 100px;
@@ -56,15 +56,17 @@ h2 {
   padding: 7px 5px 10px 5px;
   vertical-align: top;
   user-select: text;
+  -moz-user-select: text;
 }
 
 .color_table td.handle-container {
   user-select: all;
+  -moz-user-select: all;
 }
 
 /*	font-size: 14px; */
 .color_table th,
-header_table td {
+.header_table td {
   font-family: Verdana, Arial, sans-serif;
   text-align: left;
   background: #d8e7e7;
@@ -84,14 +86,14 @@ header_table td {
 }
 
 .header_table {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* footer tables are attached to other tables */
 .footer_table {
-  margin-top: 0px;
-  padding-top: 0px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .without_borders td {
@@ -172,7 +174,7 @@ tr[class^="forwarded_row"] {
 }
 
 .footer_table {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .color_table td,
